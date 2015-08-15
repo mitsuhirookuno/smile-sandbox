@@ -110,6 +110,8 @@ group :development do
 
   # Rack Profiler
   # gem 'rack-mini-profiler'
+
+  gem 'pre-commit'
 end
 
 group :development, :test do
@@ -158,3 +160,5 @@ group :production, :staging do
 end
 
 gem 'dotenv-rails'
+
+gem 'devise'
