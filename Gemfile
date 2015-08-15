@@ -63,8 +63,8 @@ gem 'less-rails'
 # App Server
 gem 'unicorn'
 
-# Slim
-gem 'slim-rails'
+# Haml
+gem 'haml-rails'
 
 # Assets log cleaner
 gem 'quiet_assets'
@@ -103,7 +103,7 @@ gem 'whenever', require: false
 gem 'active_decorator'
 
 group :development do
-  gem 'html2slim'
+  gem 'erb2haml'
 
   # N+1問題の検出
   gem 'bullet'
@@ -156,3 +156,5 @@ group :production, :staging do
   # ログ保存先変更、静的アセット Heroku 向けに調整
   gem 'rails_12factor'
 end
+
+gem 'dotenv-rails'
